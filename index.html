@@ -99,6 +99,46 @@ function darkmode() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
+    var subjectObject = {
+  "Year 9": {
+    "English": ["01", "02", "03", "04", "05", "06", "07"],
+    "Maths": ["01", "02", "03", "04", "05", "06", "07"],
+    "Humanities": ["01", "02", "03", "04", "05", "06", "07"],
+    "Science": ["01", "02", "03", "04", "05", "06", "07"],
+    "Ngadyung PC": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    "Gurabung PC": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    "Guraguma PC": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    "Dhurrawang PC": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    "Rite Journey": ["01", "02", "03", "04", "05", "06", "07"],
+  },
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
 </script>
 </body>
 
