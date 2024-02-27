@@ -19,18 +19,11 @@
     height: 2000px;
     background-position: center;
     color: white; 
+    background-color: white;
              }
-   
-     :root {
-  --color-bg: #ffffff;
-}
-
-.component {
-  background-color: var(--color-bg);
-}
 
 [data-theme="dark"] {
-  --color-bg: #000000;
+ background-color: #000000;
 }
           header { 
            font-family: 'Honk', system-ui;
@@ -92,6 +85,8 @@ src="https://portal.burgmann.act.edu.au/">
 src="https://burgmann.act.edu.au/">
 
 </iframe>
+
+  
   <script>
 document.getElementById('themeSwitch').addEventListener('change', function(event){
   (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
