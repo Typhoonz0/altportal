@@ -9,6 +9,7 @@ function darkmode() {
     } else {
       localStorage.english = 1;
     }
+     localStorage.setItem(english);
     document.getElementById("result").innerHTML = "You have set your english to: 0" + localStorage.english + "";
       alert("You have set your english to: 0" + localStorage.english);
   } else {
