@@ -60,6 +60,12 @@
   border-color: #4285f4;
   outline: none;
 }
+     
+#left_frame {
+    width: calc(50% - 4px);
+}
+#right_frame {
+    width: calc(50% - 4px);
    </style>
  
 </head>
@@ -78,11 +84,11 @@
     <h1 style="font-family: 'Honk', system-ui;font-size: 100px;text-align: center;font-weight:400;"><b>AltPortal</b></h1>
   </header>
 <h3 style="font-family: 'Source Code Pro'";>Your Files</h3>
-    <iframe align="left"; width="675" height="420"
+    <iframe id="left_frame"; width="675" height="420"
 src="https://portal.burgmann.act.edu.au/">
 </iframe> 
   <h3 style="font-family: 'Source Code Pro'";>Your Due Work</h3>
-    <iframe align="right"; width="675" height="420"
+    <iframe id="right_frame"; width="675" height="420"
 src="https://portal.burgmann.act.edu.au/">
 
 </iframe>
