@@ -1,0 +1,92 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AltPortal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  
+
+
+     <!--This is where all the button design, coloursets and fonts go:-->
+   <style>
+             body {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Source Code Pro';
+    font-size: 44px;
+    height: 2000px;
+    background-position: center;
+    background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white; 
+             }
+     
+     .dark-mode {
+       background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+     }
+
+          header { 
+           font-family: 'Honk', system-ui;
+     }
+    
+
+.buttonClass {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+.button1:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+}
+
+.button1:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+   </style>
+ 
+</head>
+
+
+
+ <!--This is all the website text, buttons and other elements go:-->
+<body>
+  <div>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1;" href="index">Home</a>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1;" href="classes">Classes</a>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1;" href="duework">Due Work</a>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1;" href="socialstream"> Social Stream</a>
+  <button onclick="darkmode()">Dark Mode</button>
+</div>
+  <header>
+    <h1 style="font-family: 'Honk', system-ui;font-size: 40px;text-align: left;font-weight:400;"><b> Your Classes</b></h1>
+  </header>
+    <iframe align="left"; width="1280" height="720"
+src="https://portal.burgmann.act.edu.au/">
+
+  <script>
+function darkmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+</body>
+
+</html>
