@@ -19,8 +19,12 @@
     height: 2000px;
     background-position: center;
     background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    color: white;
+    color: white; 
              }
+     
+     .dark-mode {
+       background-color: black;
+     }
 
           header { 
            font-family: 'Honk', system-ui;
@@ -64,10 +68,11 @@
 
  <!--This is all the website text, buttons and other elements go:-->
 <body>
+  <div>
   <a style="font-family: 'Source Code Pro'"; class="buttonClass button1" href="classes">Classes</a>
   <a style="font-family: 'Source Code Pro'"; class="buttonClass button1" href="duework">Due Work</a>
   <a style="font-family: 'Source Code Pro'"; class="buttonClass button1" href="socialstream"> Social Stream</a>
-  <a style="font-family: 'Montserrat'"; class="buttonClass button1"  href=";"> theme</a>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1 " onclick="darkmode()"> Theme</a>
 </div>
   <header>
     <h1 style="font-family: 'Honk', system-ui;font-size: 100px;text-align: center;font-weight:400;"><b>AltPortal</b></h1>
@@ -78,6 +83,12 @@ src="https://portal.burgmann.act.edu.au">
     <iframe width="720" height="420"
 src="https://burgmann-login.cloudworkengine.net/saml2/idp/SSOService.php?SAMLRequest=hVNLz9owELzzK1DuJCGBUiyIRKEPJAoRSXvopXLsBaw6tutHP%2Frv6zwoqGqpL1bWO%2BOZ8WZhcM0VWjl7EUf47sDYwdCva82FQe3hMnBaIIkNM0jgGgyyBBWrjzuUhDFSWlpJJA%2F%2BgD1HYWNAWyZFB9tulsFh%2F3Z3eL%2Fdf53PaJq8nk4nMU1ncVzhNJ1hApCmkEzG81lF5pRWFe6gn0Ebz7MMPG0w6NiMcbAVxmJhfT1OJqM4GSWvyiRFyRil0y8ddOPNMoFtC79YqwyKosrpc42FGHF5ZiIkXDr6IvU3EP4TQgE2auwlEaMqKopDAfoHIxCqi%2BpY8z6QN0xQJs7Pc6i6JoM%2BlGU%2Byg9F2ZGsbvmspTCuBt1f8%2Bm4u0tVUlvMw5viEBMbAnUhdq3EiHTYVlrW0i6aOmrz0dn%2FaRbRY%2F%2BdQaG9d7Ld5JIz8rOtN%2Bud1DW2%2FzY8DsdthdHRqW1FThgFhJ0Y0OA3zYpz%2BbLWgC0sA6sdBMMoe7i7H1Og7dD6gCxc7XAta4U1M81bwtV76C3fbT%2B2r7mfwCOcsqdDShBp%2Bnw595ufAto8LhB%2Fd6mx1%2B6T6zP6K3mXWPREdja4HT%2F%2Bgdkv&RelayState=https%3A%2F%2Fportal.burgmann.act.edu.au%2Fsaml%2Findex.php">
 </iframe> 
+  <script>
+function darkmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 
 </html>
