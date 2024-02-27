@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -17,11 +16,15 @@
     padding: 10px;
     font-family: 'Source Code Pro';
     font-size: 44px;
-    height: 1000px;
+    height: 2000px;
     background-position: center;
-    background-image: linear-gradient(0deg, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 100%);
-    color: white;
+    background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white; 
              }
+     
+     .dark-mode {
+       background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
+     }
 
           header { 
            font-family: 'Honk', system-ui;
@@ -65,14 +68,25 @@
 
  <!--This is all the website text, buttons and other elements go:-->
 <body>
-  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1" href="index">Home</a>
-  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1" href="classes">Classes</a>
-  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1" href="duework"> Due Work</a>
-  <a style="font-family: 'Montserrat'"; class="buttonClass button1"  href=";"> theme</a>
+  <div>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1;" href="index">Home</a>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1;" href="classes">Classes</a>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1;" href="duework">Due Work</a>
+  <a style="font-family: 'Source Code Pro'"; class="buttonClass button1;" href="socialstream"> Social Stream</a>
+  <button onclick="darkmode()">Dark Mode</button>
 </div>
   <header>
-    <h1 style="font-family: 'Honk', system-ui;font-size: 40px;text-align: center;font-weight:400;"><b>Social Stream</b></h1>
+    <h1 style="font-family: 'Honk', system-ui;font-size: 40px;text-align: left;font-weight:400;"><b>All Social Streams</b></h1>
   </header>
+    <iframe align="left"; width="1280" height="720"
+src="https://portal.burgmann.act.edu.au/">
+
+  <script>
+function darkmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 
 </html>
