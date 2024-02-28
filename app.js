@@ -2,20 +2,16 @@ function darkmode() {
    var element = document.body;
    element.classList.toggle("darkmode");
 }
+
     function english() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.english) {
-      localStorage.english = Number(localStorage.english)+1;
-    } else {
-      localStorage.english = 1;
-    }
-     localStorage.setItem(english);
-    document.getElementById("result").innerHTML = "You have set your english to: 0" + localStorage.english + "";
-      alert("You have set your english to: 0" + localStorage.english);
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage";
-  }
+       if (localStorage.getItem("english") === null){
+  localStorage.setItem("english", 0);
 }
+var totalPoints = Number(localStorage.getItem("english"));
+var addPoint = english + 1;
+localStorage.setItem("english", addPoint);
+console.log(addPoint);
+
         function english2() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.english2) {
