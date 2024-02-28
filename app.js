@@ -4,14 +4,8 @@ function darkmode() {
 }
 
     function english() {
-       if (localStorage.getItem("english") === null){
-  localStorage.setItem("english", 0);
-}
-var totalPoints = Number(localStorage.getItem("english"));
-var addPoint = english + 1;
-localStorage.setItem("english", addPoint);
-console.log(addPoint);
-
+       alert("test");
+       
         function english2() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.english2) {
